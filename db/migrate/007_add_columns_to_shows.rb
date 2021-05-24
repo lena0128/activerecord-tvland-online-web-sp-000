@@ -7,5 +7,6 @@ class AddColumnsToShows < ActiveRecord::Migration[5.1]
 
   def actors_list
     self.actors.full_name
+end
 
 end
