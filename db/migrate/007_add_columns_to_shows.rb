@@ -5,4 +5,7 @@ class AddColumnsToShows < ActiveRecord::Migration[5.1]
     add_column :shows, :season, :string
   end
 
+  def actors_list
+    self.actors.full_name
+
 end
