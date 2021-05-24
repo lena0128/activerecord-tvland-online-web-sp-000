@@ -5,4 +5,10 @@ class Character < ActiveRecord::Base
   def say_that_thing_you_say
    "#{slef.name} always says: #{self.catchphrase}"
   end
+
+ def full_name
+  "#{self.first_name} #{self.last_name}"
+ end
+
+
 end
